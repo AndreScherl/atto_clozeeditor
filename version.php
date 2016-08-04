@@ -17,13 +17,13 @@
 /**
  * Atto text editor integration version file.
  *
- * @package    atto_cloze
+ * @package    atto_clozeeditor
  * @copyright  2016 Matthias Ostermann  <mail@matthias-ostermann.de>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2016071100;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->version   = 2016080400;        // The current plugin version (Date: YYYYMMDDXX).
 $plugin->requires  = 2015111000;        // Requires this Moodle version.
-$plugin->component = 'atto_cloze';  // Full name of the plugin (used for diagnostics).
+$plugin->component = 'atto_clozeeditor';  // Full name of the plugin (used for diagnostics).

@@ -1,39 +1,39 @@
-div.editor_atto_content td,
-div.editor_atto_content th,
-div.editor_atto_content caption {
-    border: 1px dashed #BBB;
-    position: relative;
-    min-width: 30px;
-    height: 13px;
-}
-div.editor_atto_content caption {
-    height: auto;
+div.formsettings {
+    float: left;
+    width: 50%;
 }
 
-div.availablecolors {
-    max-width: 55%;
-    display: inline-block;
-    vertical-align: middle;
+select.type {
+    width: 90%;
 }
 
-div.availablecolors label:not(.hideborder) {
-    border: 1px solid #ddd;
+select.points {
+    width: 20%;
 }
 
-div.availablecolors label {
-    border-radius: 4px;
-    display: inline-block;
-    font-size: 0.1em;
-    padding: 2px;
-    padding-left: 22px;
+input.answer {
+    width: 90%;
 }
 
-div.availablecolors label input[type="radio"] {
-    float: none;
-    margin: 0;
-    margin-left: -15px;
+div.answer {
+    float: left; 
+    width: 40%;
 }
 
-input[name="bordersize"], input[name="width"] {
-    margin-right: 0.3em;
+select.percentage {
+    width: 80%;
+}
+
+div.percentage {
+    float: left; 
+    width: 20%;
+}
+
+input.feedback {
+    width: 100%;
+}
+
+div.feedback {
+    float: left; 
+    width: 40%;
 }

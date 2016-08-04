@@ -1,7 +1,7 @@
 {
-  "name": "moodle-atto_cloze-button",
+  "name": "moodle-atto_clozeeditor-button",
   "builds": {
-    "moodle-atto_cloze-button": {
+    "moodle-atto_clozeeditor-button": {
       "jsfiles": [
         "button.js"
       ]
