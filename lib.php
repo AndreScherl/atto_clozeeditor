@@ -17,7 +17,7 @@
 /**
  * Atto text editor integration version file.
  *
- * @package    atto_cloze
+ * @package    atto_clozeeditor
  * @copyright  2016 Matthias Ostermann  <mail@matthias-ostermann.de>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -27,15 +27,15 @@ defined('MOODLE_INTERNAL') || die();
 	/**
  	* Initialise the js strings required for this module.
  	*/
-	function atto_cloze_strings_for_js() {
+	function atto_clozeeditor_strings_for_js() {
     	global $PAGE;
 
 	    $PAGE->requires->strings_for_js(array('addanswer',
         	                                  'answer',
-                    	                      'createcloze',
+                                                  'createcloze',
                                 	          'editcloze',
                                 	          'feedback',
-                            	              'heading',
+                                                  'heading',
         	                                  'insert',
                                 	          'multichoice',
         	                                  'multichoice_h',
@@ -45,11 +45,11 @@ defined('MOODLE_INTERNAL') || die();
                         	                  'points',
         	                                  'shortanswer',
         	                                  'shortanswer_c',
-    	                                      'todo',
+                                                  'todo',
         	                                  'type'),
-                                    	'atto_cloze');
+                                    	'atto_clozeeditor');
 
 	    $PAGE->requires->strings_for_js(array('top',
-											  'bottom'),
-                                    	  	  'editor');
+                                                  'bottom'),
+                                    	'editor');
 	};

@@ -1,5 +1,5 @@
 {
-    "moodle-atto_cloze-button": {
+    "moodle-atto_clozeeditor-button": {
         "requires": [
             "moodle-editor_atto-plugin",
             "moodle-editor_atto-menu",
