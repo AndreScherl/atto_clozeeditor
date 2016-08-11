@@ -278,7 +278,7 @@ Y.namespace('M.atto_clozeeditor').Button = Y.Base.create('button', Y.M.editor_at
      * @method _getClozeSpan
      * @private
      */
-    _getClozeSpan: function () {
+    _getClozeSpan: function (e) {
         var tmpNode = this.get('host').getSelectionParentNode().parentNode;
 
         if (tmpNode.nodeName.toLowerCase() === 'span' && tmpNode.getAttribute('name') === 'cloze') {
@@ -294,7 +294,7 @@ Y.namespace('M.atto_clozeeditor').Button = Y.Base.create('button', Y.M.editor_at
      * @method _getTinyCloze
      * @private
      */
-    _getTinyCloze: function () {
+    _getTinyCloze: function (e) {
         var txt = this.get('host').getSelection().toString();
 
         if (txt.length > 1) {
@@ -311,7 +311,7 @@ Y.namespace('M.atto_clozeeditor').Button = Y.Base.create('button', Y.M.editor_at
      * @method _existingCloze
      * @private
      */
-    _existingCloze: function () {
+    _existingCloze: function (e) {
         // Find the cloze content in the surrounding text
         var selectedNode = this.get('host').getSelectionParentNode(),
                 selection = this.get('host').getSelection();
@@ -343,7 +343,7 @@ Y.namespace('M.atto_clozeeditor').Button = Y.Base.create('button', Y.M.editor_at
      * @method _displayDialogue
      * @private
      */
-    _displayDialogue: function () {
+    _displayDialogue: function (e) {
 
         // Store the current selection.
         this._currentSelection = this.get('host').getSelection();

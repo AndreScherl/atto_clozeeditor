@@ -24,7 +24,7 @@
  */
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2016081101;        // Current plugin version (Date: YYYYMMDDXX).
+$plugin->version = 2016081102;        // Current plugin version (Date: YYYYMMDDXX).
 $plugin->requires = 2015111000;        // Requires this Moodle version.
 $plugin->component = 'atto_clozeeditor';  // Full plugin name (used for diagnostics).
 $plugin->maturity = MATURITY_BETA;
