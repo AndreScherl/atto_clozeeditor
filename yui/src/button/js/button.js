@@ -32,10 +32,10 @@
  */
 
 var COMPONENT = 'atto_clozeeditor',
-        DIALOGUE = {
-            WIDTH: '800px'
-        },
-TEMPLATE = '' +
+    DIALOGUE = {
+        WIDTH: '800px'
+    },
+    TEMPLATE = '' +
         '<form class="{{CSS.FORM}}">' +
             // first element: input field to set question type and the points for the correct answer
             '<fieldset>' +
@@ -102,32 +102,32 @@ TEMPLATE = '' +
                 '<button class="submit" type="submit">{{get_string "createcloze" component}}</button>' +
             '</div>' +
         '</form>',
-        CSS = {
-            TYPE: 'type',
-            POINTS: 'points',
-            OBJANSWER: 'objanswer',
-            ANSWER: 'answer',
-            PERCENTAGE: 'percentage',
-            FEEDBACK: 'feedback',
-            ADD: 'add',
-            SUBMIT: 'submit',
-            FORM: 'atto_form',
-            WIDTH: 'customwidth',
-            WIDTHUNIT: '%',
-            FORMSETTINGS: 'formsettings'
-        },
-SELECTORS = {
-    TYPE: '.' + CSS.TYPE,
-    POINTS: '.' + CSS.POINTS,
-    OBJANSWER: '.' + CSS.OBJANSWER,
-    ANSWER: '.' + CSS.ANSWER,
-    PERCENTAGE: '.' + CSS.PERCENTAGE,
-    FEEDBACK: '.' + CSS.FEEDBACK,
-    ADD: '.add',
-    SUBMIT: '.submit',
-    FORM: '.' + CSS.FORM,
-    WIDTH: '.' + CSS.WIDTH
-};
+    CSS = {
+        TYPE: 'type',
+        POINTS: 'points',
+        OBJANSWER: 'objanswer',
+        ANSWER: 'answer',
+        PERCENTAGE: 'percentage',
+        FEEDBACK: 'feedback',
+        ADD: 'add',
+        SUBMIT: 'submit',
+        FORM: 'atto_form',
+        WIDTH: 'customwidth',
+        WIDTHUNIT: '%',
+        FORMSETTINGS: 'formsettings'
+    },
+    SELECTORS = {
+        TYPE: '.' + CSS.TYPE,
+        POINTS: '.' + CSS.POINTS,
+        OBJANSWER: '.' + CSS.OBJANSWER,
+        ANSWER: '.' + CSS.ANSWER,
+        PERCENTAGE: '.' + CSS.PERCENTAGE,
+        FEEDBACK: '.' + CSS.FEEDBACK,
+        ADD: '.add',
+        SUBMIT: '.submit',
+        FORM: '.' + CSS.FORM,
+        WIDTH: '.' + CSS.WIDTH
+    };
 
 
 Y.namespace('M.atto_clozeeditor').Button = Y.Base.create('button', Y.M.editor_atto.EditorPlugin, [], {
@@ -140,30 +140,6 @@ Y.namespace('M.atto_clozeeditor').Button = Y.Base.create('button', Y.M.editor_at
      * @private
      */
     _currentSelection: null,
-    /**
-     * The contextual menu that we can open.
-     *
-     * @property _contextMenu
-     * @type M.editor_atto.Menu
-     * @private
-     */
-    _contextMenu: null,
-    /**
-     * The last modified target.
-     *
-     * @property _lastTarget
-     * @type Node
-     * @private
-     */
-    _lastTarget: null,
-    /**
-     * The list of menu items.
-     *
-     * @property _menuOptions
-     * @type Object
-     * @private
-     */
-    _menuOptions: null,
     initializer: function () {
         this.addButton({
             icon: 'e/question',
